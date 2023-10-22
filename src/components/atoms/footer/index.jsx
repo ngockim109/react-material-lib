@@ -61,7 +61,7 @@ const icons = [
 const Footer = () => {
   return (
     <footer style={{ width: "100%" }}>
-      {/* <Container width="100%">
+      <Container width="100%">
         <Grid container sx={{ padding: "20px 0" }} display="flex">
           <Grid item xs={4} spacing={2}>
             <Box component="img" src={logo} alt="Logo"></Box>
@@ -101,7 +101,7 @@ const Footer = () => {
         <Typography color="text.secondary" textAlign="center" padding="20px 0">
           Copyright &copy; 2023 All right reserved
         </Typography>
-      </Paper> */}
+      </Paper>
     </footer>
   );
 };

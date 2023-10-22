@@ -5,13 +5,20 @@ import Discovery from "../../templates/discovery";
 
 const Home = () => {
   return (
-    // <Box display="flex" justifyContent="center" width="100%">
-    /* <div style={{ marginTop: "20px", width: "100%" }}>
+    <Box display="flex" justifyContent="center" width="100%">
+      <div
+        style={{
+          marginTop: "20px",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Discovery />
-      </div> */
-
-    // </Box>
-    <ListMovie></ListMovie>
+      </div>
+    </Box>
   );
 };
 

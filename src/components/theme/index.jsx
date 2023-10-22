@@ -64,6 +64,8 @@ export default function ThemeCustom() {
                   info: lightBlue[500],
                   error: red[500],
                   secondaryInfo: lightBlue[200],
+                  darkRedMode: grey[200],
+                  white: grey[200],
                 },
                 info: {
                   main: blue[700],
@@ -100,6 +102,8 @@ export default function ThemeCustom() {
                   info: lightBlue[500],
                   error: red[500],
                   secondaryInfo: lightBlue[200],
+                  darkRedMode: red[900],
+                  white: grey[200],
                 },
                 info: {
                   main: blue[700],

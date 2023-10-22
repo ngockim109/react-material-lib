@@ -188,7 +188,9 @@ export default function Navigation({ theme, changeTheme }) {
     <Box>
       <AppBar position="static">
         <Toolbar>
-          <Box component="img" alt="Streamo" src={logo} />
+          <Link href="/" underline="none">
+            <Box component="img" alt="Streamo" src={logo} />
+          </Link>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -205,7 +207,7 @@ export default function Navigation({ theme, changeTheme }) {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                <Link href={link.href} color="inherit" underline="none">
+                <Link href={link.href} color="text.white" underline="none">
                   {link.title}
                 </Link>
               </Button>
