@@ -1,4 +1,4 @@
-* {
+/* * {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -21,4 +21,42 @@
 
 #layout footer {
   margin-top: auto;
+}
+ */
+
+html, body, #root {
+  min-height: 100vh;
+}
+
+#root, #layout {
+  display: flex;
+  flex-direction: column;
+}
+
+#layout {
+  min-height: 100vh;
+}
+
+#layout footer {
+  margin-top: auto;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

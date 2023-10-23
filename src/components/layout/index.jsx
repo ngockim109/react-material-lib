@@ -9,9 +9,7 @@ const Layout = ({ theme, changeTheme }) => {
   return (
     <div id="layout">
       <Navigation theme={theme} changeTheme={changeTheme} />
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
     </div>
   );
