@@ -5,7 +5,7 @@ import ListMovie from "../../organisms/list-movie";
 const Discovery = () => {
   return (
     <Container style={{ margin: "20px 0", width: "100%" }}>
-      <Typography variant="h4" color="text.highlight" fontWeight={700}>
+      <Typography variant="h4" color="text.white" fontWeight={700}>
         Discovery
       </Typography>
       <ListMovie />

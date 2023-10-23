@@ -66,8 +66,13 @@ const Footer = () => {
         sx={{ width: "100%", borderRadius: "0", bgcolor: "dark.main" }}
       >
         <Box width="100%" sx={{ bgcolor: "dark.main", padding: "0 30px" }}>
-          <Box sx={{ padding: "30px 0", margin: "0" }} display="flex">
-            <Box xs={4}>
+          <Grid
+            container
+            columns={12}
+            sx={{ padding: "30px 0" }}
+            display="flex"
+          >
+            <Grid item xs={4}>
               <Box component="img" src={logo} alt="Logo"></Box>
               <Stack
                 direction="row"
@@ -83,11 +88,11 @@ const Footer = () => {
                   </Link>
                 ))}
               </Stack>
-            </Box>
-            <Box xs={8}>
-              <Box spacing={2}>
+            </Grid>
+            <Grid item xs={8}>
+              <Grid container spacing={2}>
                 {footerLinks.map((links, index) => (
-                  <Box xs={3} key={index++}>
+                  <Grid item xs={3} key={index++}>
                     {links.map((link) => (
                       <Box key={link.id}>
                         <Link
@@ -99,11 +104,11 @@ const Footer = () => {
                         </Link>
                       </Box>
                     ))}
-                  </Box>
+                  </Grid>
                 ))}
-              </Box>
-            </Box>
-          </Box>
+              </Grid>
+            </Grid>
+          </Grid>
         </Box>
       </Paper>
       <Box
