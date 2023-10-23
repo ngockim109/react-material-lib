@@ -4,7 +4,11 @@ import KeyReason from "../../organisms/key-reason";
 
 const Reasons = () => {
   return (
-    <Grid container direction="column">
+    <Grid
+      container
+      direction="column"
+      sx={{ backgroundColor: "bgSecondary.main" }}
+    >
       <Grid item padding="30px 50px">
         <KeyReason />
       </Grid>

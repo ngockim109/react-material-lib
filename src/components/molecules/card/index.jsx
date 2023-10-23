@@ -32,7 +32,9 @@ export default function MovieCard({
               {rating}
             </Typography>
           </CardContent>
-          <CardActions>
+          <CardActions
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >
             <ModalMovieDetail
               url={url}
               rating={rating}
@@ -40,8 +42,14 @@ export default function MovieCard({
               images={images}
               description={description}
             />
-            <Button size="small" color="inherit">
-              <Link href={`/detail/${title}`} underline="none" color="inherit">
+            <Button size="small" color="redLight" variant="contained">
+              <Link
+                href={`/detail/${title}`}
+                underline="none"
+                color="text.redLight"
+                textTransform="none"
+                fontWeight="bold"
+              >
                 View More
               </Link>
             </Button>

@@ -99,6 +99,12 @@ export default function ThemeCustom() {
                 redLight: {
                   main: red[800],
                 },
+                deep: {
+                  main: grey[200],
+                },
+                bgSecondary: {
+                  main: "#FEEEDE",
+                },
               }
             : {
                 // palette values for dark mode
@@ -151,6 +157,12 @@ export default function ThemeCustom() {
                 },
                 redLight: {
                   main: "#FFFFFF",
+                },
+                deep: {
+                  main: grey[900],
+                },
+                bgSecondary: {
+                  main: "#12222D",
                 },
               }),
         },

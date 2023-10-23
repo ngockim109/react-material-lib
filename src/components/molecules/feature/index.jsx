@@ -11,7 +11,7 @@ const Feature = ({ name, values, description }) => {
         {description}
       </Typography>
       {values.map((value) => (
-        <Box key={value.id} display="flex" marginTop={1} alignItems="center">
+        <Box key={value.id} display="flex" marginTop="auto" alignItems="center">
           <IconButton color="error">{value.icon}</IconButton>
           <Typography variant="span" marginLeft={1}>
             {value.keyValue}

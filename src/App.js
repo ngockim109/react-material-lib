@@ -10,13 +10,14 @@ import AboutUs from "./components/pages/about-us";
 import ThemeCustom from "./components/theme";
 import MovieDetail from "./components/pages/detail";
 import News from "./components/pages/news";
+import Contact from "./components/pages/contact";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<ThemeCustom />}>
       <Route index element={<Home />}></Route>
-      <Route path="/home" element={<Home />}></Route>
       <Route path="/about-us" element={<AboutUs />}></Route>
       <Route path="/news" element={<News />}></Route>
+      <Route path="/contact" element={<Contact />}></Route>
       <Route path="/detail/:id" element={<MovieDetail />}></Route>
     </Route>
   )

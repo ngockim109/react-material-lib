@@ -2,10 +2,18 @@ import React from "react";
 import ListNews from "../../organisms/list-news";
 import NewsContent from "../../templates/news";
 import { Box } from "@mui/material";
+import Header from "../../molecules/header";
 
 const News = () => {
   return (
-    <Box display="flex" justifyContent="center" width="100%">
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+      width="100%"
+    >
+      <Header pageName="News" />
       <div
         style={{
           marginTop: "20px",

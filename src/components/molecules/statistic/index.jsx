@@ -11,7 +11,7 @@ const Statistic = ({ name, value, component }) => {
       alignItems="center"
       justifyContent="center"
     >
-      <IconButton color="dark" aria-label="name">
+      <IconButton color="deep.main" aria-label="name">
         {component}
       </IconButton>
       <Typography variant="h4" fontWeight="bold" color="text.highlight">

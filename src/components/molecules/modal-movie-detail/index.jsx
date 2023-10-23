@@ -30,7 +30,12 @@ export default function ModalMovieDetail({
 
   return (
     <div>
-      <Button onClick={handleOpen} color="inherit" size="small">
+      <Button
+        onClick={handleOpen}
+        color="inherit"
+        variant="contained"
+        size="small"
+      >
         Detail
       </Button>
       <Modal
@@ -58,8 +63,19 @@ export default function ModalMovieDetail({
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {description}
           </Typography>
-          <Button size="small" color="inherit">
-            <Link href={`/detail/${title}`} underline="none" color="inherit">
+          <Button
+            size="small"
+            color="redLight"
+            variant="contained"
+            sx={{ marginTop: "20px" }}
+          >
+            <Link
+              href={`/detail/${title}`}
+              underline="none"
+              color="text.redLight"
+              textTransform="none"
+              fontWeight="bold"
+            >
               View More
             </Link>
           </Button>

@@ -22,7 +22,7 @@ import PropTypes from "prop-types";
 import logo from "../../../assets/images/logo.webp";
 import { useTheme } from "@emotion/react";
 const navLinks = [
-  { id: "1", title: "Home", href: "/home" },
+  { id: "1", title: "Home", href: "/" },
   { id: "2", title: "News", href: "/news" },
   { id: "3", title: "About Us", href: "/about-us" },
   { id: "4", title: "Contact", href: "/contact" },

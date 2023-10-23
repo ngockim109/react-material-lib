@@ -3,9 +3,14 @@ import Statistics from "../../organisms/statistics";
 import { Grid } from "@mui/material";
 import Reasons from "../../templates/reasons";
 import Features from "../../organisms/features";
+import Breadcrumb from "../../atoms/breadcrumb";
+import Header from "../../molecules/header";
 const AboutUs = () => {
   return (
-    <Grid container direction="column" margin="50px 0">
+    <Grid container direction="column">
+      <Grid item>
+        <Header pageName="About Us" />
+      </Grid>
       <Grid item order={{ xs: 1, md: 2 }}>
         <Reasons />
       </Grid>

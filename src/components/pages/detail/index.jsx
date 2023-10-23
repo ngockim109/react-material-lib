@@ -2,6 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import ListOfFilms from "../../../shared/ListOfFilms";
 import { Box, Container, Typography } from "@mui/material";
+import DetailContent from "../../organisms/detail-content";
+import Header from "../../molecules/header";
 
 const MovieDetail = () => {
   const params = useParams();
@@ -19,29 +21,17 @@ const MovieDetail = () => {
     { id: "8", name: "Description", value: movie.Plot },
   ];
   return (
-    <Container style={{ margin: "30px 0" }}>
-      <img
-        src={movie.Images[0]}
-        alt={movie.Title}
-        style={{ width: "100%", height: "500px", objectFit: "cover" }}
-      ></img>
-      <div style={{ marginTop: "20px" }}>
-        {contents.map((item) => (
-          <Box key={item.id} display="flex" alignItems="center">
-            <Typography color="red" variant="h6" fontWeight="600" width="140px">
-              {item.name}
-            </Typography>
-            <Typography color="inherit" sx={{ offset: "3" }}>
-              {item.value}
-            </Typography>
-          </Box>
-        ))}
-
-        {movie.Awards?.length ? null : (
-          <Typography color="inherit">Awards: {movie.Awards}</Typography>
-        )}
-      </div>
-    </Container>
+    <Box
+      width="100%"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+      marginBottom="50px"
+    >
+      <Header pageName={movie.Title} />
+      <DetailContent contents={contents} movie={movie} />
+    </Box>
   );
 };
 

@@ -22,9 +22,13 @@ import logo from "../../../assets/images/logo.webp";
 const footerLinks = [
   [
     { id: "1", name: "Home", href: "/" },
-    { id: "2", name: "Discovery", href: "/home" },
+    { id: "2", name: "Discovery", href: "/" },
   ],
-  [{ id: "1", name: "About", href: "/about-us" }],
+  [
+    { id: "1", name: "About", href: "/about-us" },
+    { id: "1", name: "Why Choose Us", href: "/about-us" },
+    { id: "1", name: "Our values", href: "/about-us" },
+  ],
   [{ id: "1", name: "News", href: "/news" }],
   [{ id: "1", name: "Contact", href: "/contact" }],
 ];
@@ -73,7 +77,9 @@ const Footer = () => {
             display="flex"
           >
             <Grid item xs={4}>
-              <Box component="img" src={logo} alt="Logo"></Box>
+              <Link href="/" underline="none">
+                <Box component="img" alt="Streamo" src={logo} />
+              </Link>
               <Stack
                 direction="row"
                 alignItems="center"
@@ -99,6 +105,7 @@ const Footer = () => {
                           href={link.href}
                           underline="none"
                           color="text.white"
+                          component="button"
                         >
                           {link.name}
                         </Link>

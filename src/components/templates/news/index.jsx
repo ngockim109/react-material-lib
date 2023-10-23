@@ -10,7 +10,7 @@ const NewsContent = () => {
         margin: "20px 0",
       }}
     >
-      <Typography variant="h5" fontWeight="bold" color="text.highlight">
+      <Typography variant="h5" fontWeight="bold" color="text.light">
         News
       </Typography>
       <ListNews />
