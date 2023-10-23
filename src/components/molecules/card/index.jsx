@@ -17,11 +17,16 @@ export default function MovieCard({
   movie,
 }) {
   return (
-    // <Paper elevation={2} sx={{ height: 270, width: 190 }}>
     <Grid item xs={16} sm={8} md={4} lg={3} xl={3} xxl={2}>
       <Paper elevation={2}>
         <Card>
-          <CardMedia component="img" image={url} title={title} height="190" />
+          <CardMedia
+            component="img"
+            image={url}
+            title={title}
+            height="300"
+            sx={{ objectFit: "cover" }}
+          />
           <CardContent sx={{ paddingBottom: "0" }}>
             <Typography variant="span" component="div">
               {rating}

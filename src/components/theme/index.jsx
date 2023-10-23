@@ -22,8 +22,6 @@ function MainContainer({ children }) {
       sx={{
         display: "flex",
         flexDirection: "column",
-        width: "100vw",
-        minHeight: "100vh",
         bgcolor: "background.default",
         color: "text.primary",
       }}
