@@ -206,6 +206,8 @@ export default function Navigation({ theme, changeTheme }) {
                 key={link.id}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
+                textTransform="none"
+                fontWeight="bold"
               >
                 <Link href={link.href} color="text.white" underline="none">
                   {link.title}

@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material";
+import { Box } from "@mui/material";
 // import { Outlet } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Outlet, useOutlet } from "react-router-dom";
@@ -9,7 +9,7 @@ const Layout = ({ theme, changeTheme }) => {
   return (
     <div id="layout">
       <Navigation theme={theme} changeTheme={changeTheme} />
-      <main style={{ width: "100%" }}>
+      <main>
         <Outlet />
       </main>
       <Footer />

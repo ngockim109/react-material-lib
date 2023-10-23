@@ -1,7 +1,7 @@
 import React from "react";
 import ListOfFilms from "../../../shared/ListOfFilms";
 import MovieCard from "../../molecules/card";
-import { Box, Container, Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 const ListMovie = () => {
   return (

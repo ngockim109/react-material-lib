@@ -66,6 +66,8 @@ export default function ThemeCustom() {
                   secondaryInfo: lightBlue[200],
                   darkRedMode: grey[200],
                   white: grey[200],
+                  grey: grey[600],
+                  redLight: grey[200],
                 },
                 info: {
                   main: blue[700],
@@ -85,6 +87,19 @@ export default function ThemeCustom() {
                 },
                 grey: {
                   main: grey[200],
+                  dark: grey[400],
+                },
+                darkRedMode: {
+                  main: grey[200],
+                },
+                dark: {
+                  main: grey[900],
+                },
+                light: {
+                  main: grey[300],
+                },
+                redLight: {
+                  main: red[800],
                 },
               }
             : {
@@ -104,6 +119,8 @@ export default function ThemeCustom() {
                   secondaryInfo: lightBlue[200],
                   darkRedMode: red[900],
                   white: grey[200],
+                  grey: grey[700],
+                  redLight: red[700],
                 },
                 info: {
                   main: blue[700],
@@ -123,6 +140,19 @@ export default function ThemeCustom() {
                 },
                 grey: {
                   main: grey[200],
+                  dark: grey[400],
+                },
+                darkRedMode: {
+                  main: red[900],
+                },
+                dark: {
+                  main: "#353535",
+                },
+                light: {
+                  main: grey[900],
+                },
+                redLight: {
+                  main: "#FFFFFF",
                 },
               }),
         },
